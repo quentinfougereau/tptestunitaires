@@ -13,6 +13,8 @@ public class TestReadData {
     Triangle triangle2;
     Triangle triangle3;
     Triangle triangle4;
+    Triangle triangle5;
+    Triangle triangle6;
 
     @BeforeAll
     static void setUpBeforeClass() throws Exception {
@@ -31,6 +33,8 @@ public class TestReadData {
         triangle2 = new Triangle();
         triangle3 = new Triangle();
         triangle4 = new Triangle();
+        triangle5 = new Triangle();
+        triangle6 = new Triangle();
     }
 
     @AfterEach
@@ -80,6 +84,27 @@ public class TestReadData {
         try {
             triangle4.readData("triangle4Valeurs.txt");
             assertEquals(triangle4.typeTriangle(), 1);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*
+     * test avec un fichier contenant des lettres
+     */
+    @Test
+    void testFichierMalForme() {
+        assertThrows(NumberFormatException.class, () -> triangle5.readData("fichierMalForme.txt"));
+    }
+
+    /*
+     * test avec un fichier csv
+     */
+    @Test
+    void testFichierCsv() {
+        try {
+            triangle6.readData("triangle.csv");
+            assertEquals(triangle6.typeTriangle(), -1);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

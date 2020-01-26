@@ -64,19 +64,22 @@ public class Triangle {
      * @param filename le nom du fichier
      * @throws FileNotFoundException si le fichier n'existe pas
      */
-    public void readData(String filename) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File(filename));
-        String line;
-        double[] tab = new double[3];
-        int i = 0;
-        while (scanner.hasNextLine() && i < 3) {
-            line = scanner.nextLine();
-            tab[i] = Double.parseDouble(line);
-            i++;
+    public void readData(String filename) throws FileNotFoundException, NumberFormatException {
+        String[] filename_splited = filename.split(".");
+        if (filename_splited.length >= 2 && filename_splited[1].equals("txt")) {
+            Scanner scanner = new Scanner(new File(filename));
+            String line;
+            double[] tab = new double[3];
+            int i = 0;
+            while (scanner.hasNextLine() && i < 3) {
+                line = scanner.nextLine();
+                tab[i] = Double.parseDouble(line);
+                i++;
+            }
+            this.setCoteA(tab[0]);
+            this.setCoteB(tab[1]);
+            this.setCoteC(tab[2]);
         }
-        this.setCoteA(tab[0]);
-        this.setCoteB(tab[1]);
-        this.setCoteC(tab[2]);
     }
 
 }

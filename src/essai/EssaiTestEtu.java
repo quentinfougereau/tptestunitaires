@@ -1,6 +1,6 @@
 package essai;
 
-import essai.Essai;
+import chercher.Chercher;
 
 /*ATTENTION: rajouter les imports nécessaires pour vos tests*/
 
@@ -17,9 +17,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Disabled;
 
-import java.time.Duration;
-
 class EssaiTestEtu {
+
+	Chercher chercher;
 
 	Essai essai;  //à initialiser avant chaque test!!!
 	Essai essai1;  //à initialiser avant chaque test!!!
