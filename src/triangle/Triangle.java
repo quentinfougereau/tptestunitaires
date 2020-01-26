@@ -65,7 +65,7 @@ public class Triangle {
      * @throws FileNotFoundException si le fichier n'existe pas
      */
     public void readData(String filename) throws FileNotFoundException, NumberFormatException {
-        String[] filename_splited = filename.split(".");
+        String[] filename_splited = filename.split("\\.");
         if (filename_splited.length >= 2 && filename_splited[1].equals("txt")) {
             Scanner scanner = new Scanner(new File(filename));
             String line;

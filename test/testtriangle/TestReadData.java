@@ -49,7 +49,7 @@ public class TestReadData {
     void testTriangleCree() {
         try {
             triangle1.readData("triangle.txt");
-            assertEquals(triangle1.typeTriangle(), 1);
+            assertEquals(1, triangle1.typeTriangle());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -70,7 +70,7 @@ public class TestReadData {
     void testFichierContientDeuxValeurs() {
         try {
             triangle3.readData("triangle2Valeurs.txt");
-            assertEquals(triangle3.typeTriangle(), -1);
+            assertEquals(-1, triangle3.typeTriangle());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -83,7 +83,7 @@ public class TestReadData {
     void testFichierContientQuatresValeurs() {
         try {
             triangle4.readData("triangle4Valeurs.txt");
-            assertEquals(triangle4.typeTriangle(), 1);
+            assertEquals(1, triangle4.typeTriangle());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -104,7 +104,7 @@ public class TestReadData {
     void testFichierCsv() {
         try {
             triangle6.readData("triangle.csv");
-            assertEquals(triangle6.typeTriangle(), -1);
+            assertEquals(-1, triangle6.typeTriangle());
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

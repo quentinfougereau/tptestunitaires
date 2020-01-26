@@ -120,7 +120,7 @@ public class TestTypeTriangle {
     void testScalene() {
         int val = scalene.typeTriangle();
         int expected = 1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -130,7 +130,7 @@ public class TestTypeTriangle {
     void testIsoceleAB() {
         int val = isoceleAB.typeTriangle();
         int expected = 2;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -140,7 +140,7 @@ public class TestTypeTriangle {
     void testIsoceleBC() {
         int val = isoceleBC.typeTriangle();
         int expected = 2;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -150,7 +150,7 @@ public class TestTypeTriangle {
     void testIsoceleAC() {
         int val = isoceleAC.typeTriangle();
         int expected = 2;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -160,7 +160,7 @@ public class TestTypeTriangle {
     void testEquilateral() {
         int val = equilateral.typeTriangle();
         int expected = 3;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -170,7 +170,7 @@ public class TestTypeTriangle {
     void testIllegal() {
         int val = illegal.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -180,7 +180,7 @@ public class TestTypeTriangle {
     void testNulCoteA() {
         int val = nulCoteA.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -190,7 +190,7 @@ public class TestTypeTriangle {
     void testNulCoteB() {
         int val = nulCoteB.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -200,7 +200,7 @@ public class TestTypeTriangle {
     void testNulCoteC() {
         int val = nulCoteC.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -210,7 +210,7 @@ public class TestTypeTriangle {
     void testNegatifCoteA() {
         int val = negatifCoteA.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -220,7 +220,7 @@ public class TestTypeTriangle {
     void testNegatifCoteB() {
         int val = negatifCoteB.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -230,7 +230,7 @@ public class TestTypeTriangle {
     void testNegatifCoteC() {
         int val = negatifCoteC.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
     /*
@@ -240,7 +240,7 @@ public class TestTypeTriangle {
     void testPlat() {
         int val = plat.typeTriangle();
         int expected = -1;
-        assertEquals(val, expected);
+        assertEquals(expected, val);
     }
 
 }
