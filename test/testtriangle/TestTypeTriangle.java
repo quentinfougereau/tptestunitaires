@@ -23,25 +23,16 @@ public class TestTypeTriangle {
 
     @BeforeAll
     static void setUpBeforeClass() throws Exception {
-        /*
-         * ajouter un message
-         */
         System.out.println("Démarrage des tests");
     }
 
     @AfterAll
     static void tearDownAfterClass() throws Exception {
-        /*
-         * ajouter un message
-         */
         System.out.println("Fin des tests");
     }
 
     @BeforeEach
     void setUp() throws Exception {
-        /*
-         * ajouter un message
-         */
         System.out.println("Début du test");
 
         /* triangle scalène */
@@ -119,9 +110,6 @@ public class TestTypeTriangle {
 
     @AfterEach
     void tearDown() throws Exception {
-        /*
-         * ajouter un message
-         */
         System.out.println("Test terminé");
     }
 
